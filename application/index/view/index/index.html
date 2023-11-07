@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{$site.name|htmlentities}</title>
+
+    <link rel="stylesheet" href="/okle/css/index.css" />
+    <style>
+        .main {
+            position: relative;
+            max-width: 540px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        @font-face {
+        font-family: 'MyCustomFont';
+        src: url('/public/okle/picture/op.ttf') format('truetype');
+        }
+
+        body {
+        font-family: 'MyCustomFont', sans-serif;
+        }
+        .main img {
+            width: 100%;
+        }
+
+        .header {
+            position: relative;
+            padding: 0 .64rem;
+            height: 26.84rem;
+            text-align: center;
+            background: url('/okle/images/1.png') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header .title {
+            position: relative;
+            padding: 2.52rem 0 .32rem;
+            font-size: 1.12rem;
+            line-height: 1.68rem;
+            font-family: Source Han Sans CN-Heavy, Source Han Sans CN;
+            font-weight: 800;
+            text-shadow: 0px 6px 0px #5500A4;
+            text-stroke: 1px #FFFFFF;
+            -webkit-text-stroke: 1px #FFFFFF;
+            background: linear-gradient(180deg, #6603DE 0%, #A008E6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header .tit {
+            font-size: .72rem;
+            line-height: 1.08rem;
+            font-family: Source Han Sans CN-Heavy, Source Han Sans CN;
+            font-weight: 800;
+            color: #FFFFFF;
+            text-shadow: 0px 2px 4px #7705E1;
+        }
+
+        .box1 {
+            position: relative;
+            margin: .28rem .64rem 1.4rem;
+        }
+
+        .box1 .txt {
+            position: relative;
+            padding: 2.84rem .92rem 0;
+            height: 11.2rem;
+            font-size: .64rem;
+            line-height: .96rem;
+            font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+            font-weight: bold;
+            color: #5500A4;
+            background: url('/okle/images/2.png') no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+
+        .box1>img {
+            margin: 1.16rem 0 .4rem;
+        }
+
+        .box1 .desc {
+            font-size: .64rem;
+            line-height: .96rem;
+            font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .box2 {
+            position: relative;
+            padding: 0 .64rem;
+        }
+
+        .box2 .title {
+            font-size: 1rem;
+            line-height: 1.52rem;
+            font-family: Source Han Sans CN-Heavy, Source Han Sans CN;
+            font-weight: 800;
+            text-align: center;
+            text-shadow: 0px 4px 0px #5500A4;
+            text-stroke: 1px #FFFFFF;
+            -webkit-text-stroke: 1px #FFFFFF;
+            background: linear-gradient(180deg, #7605E1 0%, #A008E6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .box2 .txt {
+            margin-top: .8rem;
+            padding: 4.24rem .56rem 0;
+            height: 20.56rem;
+            font-size: .64rem;
+            line-height: .96rem;
+            font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+            font-weight: bold;
+            color: #FFFFFF;
+            background: url('/okle/images/4.png') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box3 {
+            position: relative;
+            padding: .64rem .64rem .6rem;
+        }
+
+        .box3 .btn,
+        .footer .btn {
+            padding: .48rem 0;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-family: Source Han Sans CN-Heavy, Source Han Sans CN;
+            font-weight: 800;
+            color: #FFFFFF;
+            text-align: center;
+            border: .16rem solid #FFFFFF;
+            border-radius: .8rem;
+            box-shadow: 0 .32rem 0 rgba(85, 0, 164, 1);
+            background: #7906E2;
+        }
+
+        .box3 .title {
+            margin-top: 1.4rem;
+            font-size: 1rem;
+            line-height: 1.52rem;
+            font-family: Source Han Sans CN-Heavy, Source Han Sans CN;
+            font-weight: 800;
+            text-align: center;
+            text-shadow: 0px 4px 0px #5500A4;
+            text-stroke: 1px #FFFFFF;
+            -webkit-text-stroke: 1px #FFFFFF;
+            background: linear-gradient(180deg, #7605E1 0%, #A008E6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .box3>img {
+            margin: .8rem 0;
+        }
+
+        .box3 .desc {
+            position: relative;
+            font-size: .64rem;
+            line-height: .96rem;
+            font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .box3 .desc>img {
+            position: absolute;
+            right: .24rem;
+            bottom: -0.36rem;
+            width: 1.64rem;
+            height: 1.24rem;
+        }
+
+        .box4 {
+            position: relative;
+            padding: 3.08rem .8rem 4.52rem .64rem;
+            background: url('/okle/images/8.png') no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+
+        .box4 .item {
+            padding: .4rem;
+            font-size: .64rem;
+            line-height: .96rem;
+            font-family: Source Han Sans CN-Bold, Source Han Sans CN;
+            font-weight: bold;
+            color: #5500A4;
+            border: .16rem solid #7906E2;
+            border-radius: .24rem;
+            box-shadow: .16rem .16rem 0px 0px #5500A4;
+            background: #FFFFFF;
+        }
+
+        .box4 .item+.item {
+            margin-top: .8rem;
+        }
+
+        .footer {
+            position: relative;
+            padding: 1.08rem .64rem 3.16rem;
+        }
+    </style>
+
+	{$site.script_code}
+
+</head>
+
+<body>
+    <!--<a href="#" class="sjline">-->
+        <div class="main">
+            <img src="/okle/picture/1.jpg" loading="lazy" />
+            <div style="margin:5% 0 0 5%;">
+                <h1 style="font-size:0.55rem;margin-bottom: 15px;letter-spacing: -1px;">STOCK IS EASY</h1>
+                <div style="display: flex;justify-content: space-between;">
+                    <div style="width:25%;"><img src="/okle/picture/2.png" loading="lazy" style="width:100%;height:auto;"/></div>
+                    <div style="width:72%;font-size: 0.55rem;font-weight: bolder;line-height: 30px;letter-spacing: -1px;display: flex;flex-direction: column;">
+                        <span style="border-bottom: 4px solid #fe0000;word-break: break-all;white-space: nowrap;margin-top: 0.8rem;">1. Introduction to Malaysian stock market</span>
+                        <span style="border-bottom: 4px solid #fe0000;word-break: break-all;white-space: nowrap;">2. Rules of ultra-short-term stock trading</span>
+                        <span style="border-bottom: 4px solid #fe0000;word-break: break-all;white-space: nowrap;">3. How to easily understand dividends</span>
+                        <span style="border-bottom: 4px solid #fe0000;word-break: break-all;white-space: nowrap;">4. How to double profits in one month.</span>
+                    </div>
+                </div>
+            </div>
+            <div style="margin:5% 0 0 5%;display: flex;justify-content: space-between;height: 160px;">
+                <div style="width:72%;font-size: 0.5rem;font-weight: bolder;line-height: 20px;display: flex;flex-direction: column;">
+                    <p style="word-break: break-all;">Four famous Malaysian stock teachers jointly produced the book,  world debut.  exclusively produced according to Malaysia's stock investment market.  Now, it's time to sign up for sale.  <span style="color:#fe0000;">Click WhatsApp to receive the wealth secrets for free.</span color="#fe0000"></p>
+                        <!-- <span>Four famous Malaysian stock teachers jointly</span>
+                        <span>produced the book,  world debut.  exclusively produced</span>
+                        <span>according to Malaysia's stock investment market.  Now,</span>
+                        <span>it's time to sign up for sale.  Click WhatsApp to receive</span>
+                        <span>the wealth secrets for free.</span> -->
+                    
+                </div>
+                <divs style="width:25%;display: flex;justify-content: center;">
+                    <img src="/okle/picture/whastapp.webp" loading="lazy" style="width: 80px;height:80px;margin-top: 20px;"  onclick="toUrl()"/>
+                </div>
+            </div>
+        </div>
+    <!--</a>-->
+    
+
+    <div class="you"
+        style="z-index: 999; width:60px;height:60px;border-radius: 50%;border:2px solid #50cd5e;position:fixed;right:8px;top:45%;overflow: hidden;display: flex;justify-content: center;align-items: center;background-image: url(/okle/images/whastapp.webp);background-size: 100% 100%;">
+        <a style="width:70px;height:70px;font-size:16pt;border-radius: 50%;" href="#"
+            class="sjline" onclick="toUrl()"></a>
+    </div>
+
+    <script src="/okle/js/jquery.min.js"></script>
+
+
+
+        <script>
+            function toUrl(params=0) {
+                $.ajax({
+                type: 'POST',
+                url: "{:url('index/tourl')}",
+                data: { 'params': params},
+                dataType: 'json',
+                afterSend: function () {
+                    
+                },
+                success: function (json) {
+                    
+                    window.location.href = JSON.parse(json);
+                },
+                // error: function () {
+                //     alert("Data loading failure");
+                // }
+            });
+            }
+        </script>
+</body>
+
+</html>
